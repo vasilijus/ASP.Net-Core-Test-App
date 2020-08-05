@@ -13,15 +13,17 @@ namespace ASP.Net_Core_Test_App.Controllers
     public class HelloWorldController : Controller
     {
         
-        public string Index()
+        // Quick test without views
+        // public string Index() { return "This is my default action"; }
+        public IActionResult Index()
         {
-            return "This is my default action";
+            return View();
         }
 
-        public string Welcome( string name, int numTimes = 1 )
+        public string Welcome( string name, int ID = 1 )
         {
             // return "Welcome action method";
-            return HtmlEncoder.Default.Encode($"Hello {name}, NumberTimes is: {numTimes}");
+            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
         }
 
     }
