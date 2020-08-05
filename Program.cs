@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 
-namespace ASP.Net_Core_Test_App
+namespace MovieAppTest
 {
     public class Program
     {

@@ -5,9 +5,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using ASP.Net_Core_Test_App.Models;
+using MovieAppTest.Models;
 
-namespace ASP.Net_Core_Test_App.Controllers
+namespace MovieAppTest.Controllers
 {
     public class HomeController : Controller
     {
