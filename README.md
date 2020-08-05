@@ -15,6 +15,9 @@ dotnet new sln -n TestApp
 
 
 
+### Tutorial
+https://docs.microsoft.com/en-us/aspnet/core/tutorials/first-mvc-app/adding-model?view=aspnetcore-3.1&tabs=visual-studio-code
+
 
 
 
