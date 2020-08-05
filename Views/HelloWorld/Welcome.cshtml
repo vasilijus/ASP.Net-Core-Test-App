@@ -1,0 +1,14 @@
+@{
+    ViewData["Title"] = "HelloWorld Index";
+}
+
+<div class="text-center">
+    <h1 class="display-4">HelloWorld/Welcome</h1>
+    <p>Newly made Controller.</p>
+
+    @for ( int i = 0; i < (int)ViewData["NumTimes"]; i++ )
+    {
+        <li>@ViewData["Message"]</li>
+    }
+
+</div>

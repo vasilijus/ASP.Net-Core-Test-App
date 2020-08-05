@@ -15,15 +15,24 @@ namespace ASP.Net_Core_Test_App.Controllers
         
         // Quick test without views
         // public string Index() { return "This is my default action"; }
+        // GET: https://localhost:5001/HelloWorld
         public IActionResult Index()
         {
             return View();
         }
 
-        public string Welcome( string name, int ID = 1 )
+        // public string Welcome( string name, int ID = 1 )
+        // {
+        //     // return "Welcome action method";
+        //     return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+        // }
+
+        // GET: https://localhost:5001/HelloWorld/Welcome?name=Sergio&numTimes=5
+        public IActionResult Welcome( string name, int numTimes = 1 )
         {
-            // return "Welcome action method";
-            return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+            ViewData["Message"] = "Hello " + name;
+            ViewData["NumTimes"] = numTimes;
+            return View();
         }
 
     }
